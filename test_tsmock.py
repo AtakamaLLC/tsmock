@@ -41,8 +41,6 @@ def test_call_func(gcm_patch, passing):
         thread_unsafe_mocks()
         mock = TSMagicMock()
 
-    mock._mock_lock = threading.RLock()
-
     threads = []
     event = threading.Event()
     for _ in range(nb_threads):
