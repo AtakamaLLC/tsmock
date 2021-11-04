@@ -8,17 +8,17 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
-        matrix:
-            python-verison ['3.x']
+      matrix:
+        python-verison ['3.x']
+    name: Python ${{ matrix.python-version }}
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: ${{ matric.pythin-version }}
+        python-version: ${{ matrix.python-version }}
         architecture: x64
     - name: Install dependencies
       run: |
