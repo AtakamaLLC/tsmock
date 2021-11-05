@@ -1,6 +1,7 @@
 [tool.poetry]
 name = "tsmock"
-version = "0.1.1"
+readme = "README.md"
+version = "0.1.2"
 description = "Thread safe wrapper around unittest.mock"
 authors = ["Erik Aronesty <erik@atakama.com>"]
 keywords = ["thread", "unittest", "mock"]
