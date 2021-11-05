@@ -1,9 +1,12 @@
 [tool.poetry]
 name = "tsmock"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "Thread safe wrapper around unittest.mock"
 authors = ["Erik Aronesty <erik@atakama.com>"]
+keywords = ["thread", "unittest", "mock"]
 license = "MIT"
+homepage = "https://github.com/AtakamaLLC/tsmock"
+repository = "https://github.com/AtakamaLLC/tsmock"
 
 [tool.poetry.dependencies]
 python = ">=3.6.8"
